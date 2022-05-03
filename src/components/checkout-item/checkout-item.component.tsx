@@ -11,6 +11,7 @@ import {
   RemoveButton,
 } from "./checkout-item.styles";
 import { CartItem } from "../../store/cart/cart.types";
+import { memo } from "react";
 
 type CheckoutItemProps = {
   cartItem: CartItem;
@@ -52,4 +53,4 @@ const CheckoutItem = ({ cartItem }: CheckoutItemProps) => {
   );
 };
 
-export default CheckoutItem;
+export default memo(CheckoutItem);
