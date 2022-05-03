@@ -24,6 +24,10 @@ export const CheckoutItemContainer = styled.div`
       margin: 0 10px;
     }
   }
+
+  @media screen and (max-width: 800px) {
+    font-size: 16px;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -34,9 +38,16 @@ export const ImageContainer = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  @media screen and (max-width: 800px) {
+    padding-right: 10px;
+  }
 `;
 
 export const RemoveButton = styled.span`
   padding-left: 12px;
   cursor: pointer;
+  @media screen and (max-width: 800px) {
+    padding-left: unset;
+  }
 `;
